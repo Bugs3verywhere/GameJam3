@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Camera follows player
-        mainCam.transform.position = new Vector3(player.position.x, player.position.y + 1, -8);
+        mainCam.transform.position = new Vector3(player.position.x, player.position.y, -8);
 
         //Player movement
         float facingDirection = 0f;
