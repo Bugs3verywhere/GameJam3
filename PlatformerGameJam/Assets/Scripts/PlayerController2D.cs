@@ -6,6 +6,7 @@ public class PlayerController2D : MonoBehaviour
     //Declaring basic variables
     public Rigidbody2D player;
     public SpriteRenderer playerSprite;
+    public Animator animator;
     public bool touchingGround = false;
     public float facingDirection;
     public Camera mainCam;
@@ -19,8 +20,8 @@ public class PlayerController2D : MonoBehaviour
     void Update()
     {
         //Camera follows player
-        mainCam.transform.position = new Vector3(player.position.x, player.position.y + 1, -cameraDistance);
-
+        mainCam.transform.position = Vector3.Lerp(mainCam.transform.position, new Vector3(player.position.x, player.position.y + 1, -cameraDistance), 0.03f);
+        
         //Player movement
         float facingDirection = 0f;
 
@@ -38,10 +39,29 @@ public class PlayerController2D : MonoBehaviour
 
         player.velocity = new Vector3(walkSpeed * facingDirection, player.velocity.y, 0);
 
+        if (facingDirection != 0)
+        {
+            animator.SetBool("Moving", true);
+        }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && touchingGround)
         {
             player.velocity = new Vector3(player.velocity.x, jumpSpeed, 0);
             touchingGround = false;
+        }
+
+        if (touchingGround)
+        {
+            animator.SetBool("Grounded", true);
+        }
+        else
+        {
+            animator.SetBool("Grounded", false);
+            animator.SetBool("Rising", (player.velocity.y > 0));
         }
     }
 
