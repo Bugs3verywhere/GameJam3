@@ -11,12 +11,15 @@ public class PlayerController2D : MonoBehaviour
     public float facingDirection;
     public Camera mainCam;
 
+    float lastGrounded = 0f;
+
     //Movement speed values
-    public float baseSpeed = 2f;
-    public float walkSpeed = 2f;
-    public float sprintSpeed = 4f; //Not implemented yet
-    public float jumpSpeed = 5f;
-    public float cameraDistance = 10f;
+    public float baseSpeed = 3.5f;
+    public float sprintSpeed = 5f;
+    float walkSpeed = 3.5f;
+    public float jumpSpeed = 10f;
+
+    public float cameraDistance = 20f;
 
     void Update()
     {
@@ -29,26 +32,30 @@ public class PlayerController2D : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             walkSpeed = sprintSpeed;
+            animator.speed = 1.4f;
         }
         else
         {
             walkSpeed = baseSpeed;
+            animator.speed = 1;
         }
 
+        //Player facing direction
         if (Input.GetKey(KeyCode.A) & !Input.GetKey(KeyCode.D))
         {
             facingDirection = -1;
             playerSprite.flipX = true;
         }
-
         else if (Input.GetKey(KeyCode.D) & !Input.GetKey(KeyCode.A))
         {
             facingDirection = 1;
             playerSprite.flipX = false;
         }
 
+        //Move player
         player.velocity = new Vector3(walkSpeed * facingDirection, player.velocity.y, 0);
 
+        //Movement animation
         if (facingDirection != 0)
         {
             animator.SetBool("Moving", true);
@@ -58,12 +65,27 @@ public class PlayerController2D : MonoBehaviour
             animator.SetBool("Moving", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && touchingGround)
+        //Jump
+        if (Input.GetKeyDown(KeyCode.Space) && (touchingGround||Time.time - lastGrounded <= 0.125f))//Coyote time
         {
             player.velocity = new Vector3(player.velocity.x, jumpSpeed, 0);
             touchingGround = false;
+            lastGrounded = 0;
         }
 
+        //Landing
+        if (player.Cast(new Vector2(0, -1), new RaycastHit2D[1], 0.1f) > 0)
+        {
+            touchingGround = true;
+            lastGrounded = Time.time;
+        }
+        //Falling
+        else
+        {
+            touchingGround = false;
+        }
+
+        //Animation for grounded/falling/rising
         if (touchingGround)
         {
             animator.SetBool("Grounded", true);
@@ -72,15 +94,6 @@ public class PlayerController2D : MonoBehaviour
         {
             animator.SetBool("Grounded", false);
             animator.SetBool("Rising", (player.velocity.y > 0));
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Check floor collision
-        if (collision.collider.CompareTag("Floor"))
-        {
-            touchingGround = true;
         }
     }
 }

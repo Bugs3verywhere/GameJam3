@@ -13471,7 +13471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502443533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 6, z: -10}
+  m_LocalPosition: {x: -130.5, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57681,6 +57681,18 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1445290722}
+    - target: {fileID: 9184673512997977718, guid: f232df44c54df4744b2ebe579124da2b, type: 3}
+      propertyPath: baseSpeed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9184673512997977718, guid: f232df44c54df4744b2ebe579124da2b, type: 3}
+      propertyPath: sprintSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9184673512997977718, guid: f232df44c54df4744b2ebe579124da2b, type: 3}
+      propertyPath: cameraDistance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 9184673512997977719, guid: f232df44c54df4744b2ebe579124da2b, type: 3}
       propertyPath: m_EdgeRadius
       value: 0.05
