@@ -12,6 +12,7 @@ public class PlayerController2D : MonoBehaviour
     public Camera mainCam;
 
     //Movement speed values
+    public float baseSpeed = 2f;
     public float walkSpeed = 2f;
     public float sprintSpeed = 4f; //Not implemented yet
     public float jumpSpeed = 5f;
