@@ -1233,9 +1233,9 @@ TextureImporter:
         x: 96
         y: 32
         width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27586207}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1243,27 +1243,6 @@ TextureImporter:
       bones: []
       spriteID: 32fc5b3d9a0ad384295658d5be2a8858
       internalID: 212115807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemap_55
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42a8e91a80a32e44199d438292c1075b
-      internalID: -1422026192
       vertices: []
       indices: 
       edges: []
