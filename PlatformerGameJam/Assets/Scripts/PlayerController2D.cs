@@ -40,7 +40,7 @@ public class PlayerController2D : MonoBehaviour
         //Camera follows player
         mainCam.transform.position = Vector3.Lerp(mainCam.transform.position, new Vector3(player.position.x, player.position.y + 1, -cameraDistance), 0.03f);
         // Background parallax
-        BG0.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x*0.1f+Time.time*0.25f) % 40, mainCam.transform.position.y, 12);
+        BG0.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x*0.1f+Time.time*0.25f) % 20, mainCam.transform.position.y, 12);
         BG1.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.2f) % 20, mainCam.transform.position.y + 4 - (mainCam.transform.position.y * 0.2f), 12);
         BG1b.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.2f) % 20, mainCam.transform.position.y - 12.875f - (mainCam.transform.position.y * 0.2f), 12);
         BG2.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.4f) % 20, mainCam.transform.position.y + 8 - (mainCam.transform.position.y * 0.4f), 12);

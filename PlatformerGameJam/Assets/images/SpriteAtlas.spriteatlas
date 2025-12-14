@@ -47,11 +47,26 @@ SpriteAtlas:
     - {fileID: 2800000, guid: da5a85d8f587b9045a65d980d1693c03, type: 3}
     - {fileID: 2800000, guid: 2fd0ffd9e6899b547bd2cd07a7a9df98, type: 3}
     - {fileID: 2800000, guid: 4f701d6f92366004783f6f25a243ccba, type: 3}
+    - {fileID: 2800000, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+    - {fileID: 2800000, guid: 69217264f2990b34f92ec9b8eaa50dda, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 390852764, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: 2088007636, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: -1125516184, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: -2126666199, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: -1126045843, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: -515243907, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: 888911256, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: -1268481542, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: 1613142883, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: 824369961, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: -915326145, guid: b9c6adb04c0587d43af0269e00142c4e, type: 3}
+  - {fileID: -1280777858, guid: 69217264f2990b34f92ec9b8eaa50dda, type: 3}
+  - {fileID: -1268002657, guid: 69217264f2990b34f92ec9b8eaa50dda, type: 3}
   - {fileID: 104161383, guid: da5a85d8f587b9045a65d980d1693c03, type: 3}
   - {fileID: -1676156488, guid: da5a85d8f587b9045a65d980d1693c03, type: 3}
   - {fileID: 68588608, guid: da5a85d8f587b9045a65d980d1693c03, type: 3}
@@ -144,6 +159,19 @@ SpriteAtlas:
   - {fileID: -1673423553, guid: 4f701d6f92366004783f6f25a243ccba, type: 3}
   - {fileID: 576177473, guid: 4f701d6f92366004783f6f25a243ccba, type: 3}
   m_PackedSpriteNamesToIndex:
+  - GamGJ3_TM4_10
+  - GamGJ3_TM4_5
+  - GamGJ3_TM4_4
+  - GamGJ3_TM4_7
+  - GamGJ3_TM4_6
+  - GamGJ3_TM4_1
+  - GamGJ3_TM4_0
+  - GamGJ3_TM4_3
+  - GamGJ3_TM4_2
+  - GamGJ3_TM4_9
+  - GamGJ3_TM4_8
+  - buildings_1
+  - buildings_0
   - tilemap_68
   - tilemap_69
   - tilemap_60
