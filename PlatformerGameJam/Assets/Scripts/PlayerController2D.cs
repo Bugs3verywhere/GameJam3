@@ -1,4 +1,8 @@
+using System;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController2D : MonoBehaviour
 {
@@ -21,11 +25,32 @@ public class PlayerController2D : MonoBehaviour
 
     public float cameraDistance = 20f;
 
+    public Transform BG0;
+    public Transform BG1;
+    public Transform BG2;
+    public Transform BG3;
+    public Transform BG4;
+    public Transform BG1b;
+    public Transform BG2b;
+    public Transform BG3b;
+    public Transform BG4b;
+
     void Update()
     {
         //Camera follows player
         mainCam.transform.position = Vector3.Lerp(mainCam.transform.position, new Vector3(player.position.x, player.position.y + 1, -cameraDistance), 0.03f);
-        
+        // Background parallax
+        BG0.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x*0.1f+Time.time*0.25f) % 40, mainCam.transform.position.y, 12);
+        BG1.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.2f) % 20, mainCam.transform.position.y + 4 - (mainCam.transform.position.y * 0.2f), 12);
+        BG1b.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.2f) % 20, mainCam.transform.position.y - 12.875f - (mainCam.transform.position.y * 0.2f), 12);
+        BG2.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.4f) % 20, mainCam.transform.position.y + 8 - (mainCam.transform.position.y * 0.4f), 12);
+        BG2b.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.4f) % 20, mainCam.transform.position.y + -8.875f - (mainCam.transform.position.y * 0.4f), 12);
+        BG3.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.6f) % 20, mainCam.transform.position.y + 8 - (mainCam.transform.position.y * 0.6f), 12);
+        BG3b.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.6f) % 20, mainCam.transform.position.y + -8.875f - (mainCam.transform.position.y * 0.6f), 12);
+        BG4.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.8f) % 20, mainCam.transform.position.y + 8 - (mainCam.transform.position.y * 0.8f), 12);
+        BG4b.position = new Vector3(mainCam.transform.position.x - (mainCam.transform.position.x * 0.8f) % 20, mainCam.transform.position.y + -8.875f - (mainCam.transform.position.y * 0.8f), 12);
+
+
         //Player movement
         float facingDirection = 0f;
 

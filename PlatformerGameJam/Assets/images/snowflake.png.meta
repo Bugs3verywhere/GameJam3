@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69217264f2990b34f92ec9b8eaa50dda
+guid: 2d49c4808d17d444886d8d667ce83536
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -91,62 +91,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: buildings_0
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 96
-        width: 156
-        height: 384
-      alignment: 9
-      pivot: {x: 0.5, y: 0.083333336}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35f7a3f396ab57b44a4234c95e32b38a
-      internalID: -1268002657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings_1
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 96
-        width: 152
-        height: 204
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15686275}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f39609bdb3438cd4fad1f3e856ac7214
-      internalID: -1280777858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 58c23945b5f95fd458c5986502cf9663
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      buildings_0: -1268002657
-      buildings_1: -1280777858
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

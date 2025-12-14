@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69217264f2990b34f92ec9b8eaa50dda
+guid: 4f701d6f92366004783f6f25a243ccba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,43 +93,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buildings_0
+      name: GJ_3_Background_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 96
-        width: 156
-        height: 384
-      alignment: 9
-      pivot: {x: 0.5, y: 0.083333336}
+        x: 0
+        y: 900
+        width: 400
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35f7a3f396ab57b44a4234c95e32b38a
-      internalID: -1268002657
+      spriteID: 28d0da29980d19a409bff17bdc890577
+      internalID: 643316470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings_1
+      name: GJ_3_Background_1
       rect:
         serializedVersion: 2
-        x: 181
-        y: 96
-        width: 152
-        height: 204
-      alignment: 9
-      pivot: {x: 0.5, y: 0.15686275}
+        x: 0
+        y: 675
+        width: 400
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f39609bdb3438cd4fad1f3e856ac7214
-      internalID: -1280777858
+      spriteID: 1458fccf3f7dfed43a7944d3b24219b4
+      internalID: 361612138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_3_Background_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 400
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7058bd49fbcbc4ab60783972c3eaaf
+      internalID: 1078442486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_3_Background_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 400
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09caa7d3348e16844b047a67857473ad
+      internalID: -1673423553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_3_Background_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863f7ef531e29f04c98e3668667b9ff1
+      internalID: 576177473
       vertices: []
       indices: 
       edges: []
@@ -137,7 +200,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 58c23945b5f95fd458c5986502cf9663
+    spriteID: 613f173220fd74643b2c005423322e7a
     internalID: 0
     vertices: []
     indices: 
@@ -145,8 +208,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      buildings_0: -1268002657
-      buildings_1: -1280777858
+      GJ_3_Background_0: 643316470
+      GJ_3_Background_1: 361612138
+      GJ_3_Background_2: 1078442486
+      GJ_3_Background_3: -1673423553
+      GJ_3_Background_4: 576177473
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
